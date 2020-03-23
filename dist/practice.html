@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- prevent opening in google translate -->
+  <meta name="google" content="notranslate">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/book.svg">
+  <title></title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="training_wrapper">
+      <div id="trainingBody">
+        <div id="userStatusWrapper">
+          <!-- <div id="userStatus"></div> -->
+          <!-- <br> -->
+          <!-- <a class="button" id="signInOutButton" href="signIn.html">Sign-in</a> -->
+          <p id="loggedInStatus"></p>
+          <a href="index.html">Main Menu</a>
+        </div>
+
+        <div id="scoreCounter"></div>
+        <div id="pointsCounter" class="pointsCounter">
+          <p>Last 7 days</p>
+          <div id="history7days" class="history7days">Points</div>
+          <div id="timeHistory7days" class="history7days">Times</div>
+
+          <p> Today </p>
+          <!-- <div id="timeCounter" class="pointsCounter"> -->
+          <!-- <div id="timeHistory7days" class="history7days"></div> -->
+          <div id="timeCounterMain" class="pointsCounterMain">
+            <div>
+              <!-- <p>In this Session</p>
+              <div id="timeCounterS" class="pointsCounterS">
+                <p>0</p>
+              </div> -->
+              <p>Points</p>
+              <div id="pointsCounterT" class="pointsCounterT">
+                <p>0</p>
+              </div>
+            </div>
+            <div>
+              <p>Time</p>
+              <div id="timeCounterT" class="pointsCounterT">
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+
+
+
+          <p> Session </p>
+          <div id="pointsCounterMain" class="pointsCounterMain">
+            <div>
+              <p>Points</p>
+              <div id="pointsCounterS" class="pointsCounterS">
+                <p>0</p>
+              </div>
+            </div>
+            <div>
+              <p>Time</p>
+              <div id="timeCounterS" class="pointsCounterS">
+                <p>0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div id="mainIcons">
+          <div id="help">
+            <div class="visibleIcon">
+              <img src="img/informationBest.png" class="mainIcon">
+            </div>
+            <div class="invisibleWindow">
+              <h1>HELP</h1>
+              <h2>Česky</h2>
+              <h4>Video-návody:</h4>
+              <a href="https://www.youtube.com/watch?v=uayzjl2hW68&feature=youtu.be"> > Přihlášení a používání (3.5
+                min.)</a>
+              <a href="https://www.youtube.com/watch?v=xFNTusBz4cU&feature=youtu.be">> Uložení ikonky (zástupce) na
+                plochu
+                mobilu pro snadný a rychlý přístup do aplikace.</a>
+              <br><br>
+
+              <h2>In English</h2>
+              <h4>Video-manuals:</h4>
+              <a href="https://youtu.be/fKLlgJTSjq4"> > How to use the app (4min.)</a>
+              <a href="https://youtu.be/I5rhT9XeO48">>Save app on phone's desktop (1min.)</a>
+              <h4>Import Vocabulary </h4>
+              <p>Words to learn can be uploaded 1 by 1 or in batch mode from an EXCEL file. (Detailed steps within the
+                app
+                itself. Start by using "+" button.)
+
+                <h6>If you are using Google Translate... </h6>
+                On desktop PC (not phone) you can export all your favourite (starred) words from google translate to an
+                excel file. Then
+                import this file in here.
+              </p>
+              <h4>Levels (0..10):</h4>
+              <p>Each word starts in level 0. If words is remembered, level is improved. If word is forgotten, level is
+                lowered. Each level represents TIME GAP. Bigger gap = longer time until the word will be shown again.
+                <br> When level 10 is reached, word is considered "learned" and will not be shown again. (You remembered
+                the
+                word even after more than 7 days of not seeing the word.) </p>
+              <h4>3 buttons on the botton: rating your knowledge</h4>
+              <p>Red button: Sets the level back to 0.</p>
+              <p>Yellow button: Lowers the level by 2 (usually, only in level1,2,3 it lovers less)</p>
+              <p>Green button: Improves the level. (Usually by 0.5, but other factors will infulence that too.)</p>
+
+              <h2>Extras</h2>
+              <h4>Letters as Hints</h4>
+              <p>Tap on 3 dots (...) to see first letters of the word you are trying to remember.</p>
+              <h4>Points & Time</h4>
+              <p>You can see how much you improved and how much time you spent learning in: 1) current session; 2)
+                Today;
+                3) This week</p>
+              <h6>Points (=Improvement tracker)</h6>
+              <p>App is tracking your progress. Points correspond with changes in words' levels. Forgetting words can
+                get
+                you negative score. Getting 10 points corresponds with learning 1 word perfectly.</p>
+              <h6>Time</h6>
+              <p>When you are active, app measures your time. Try to learn at least 5 minutes every day.</p>
+              <h4>Extra Buttons</h4>
+              <h6>Speak</h6>
+              <p>Speaks the word/phrase.</p>
+              <h6>Google def.</h6>
+              <p>Opens new window with word's definition, sentence examples and synonyms.</p>
+              <h6>Adjust word</h6>
+              <p>Here you can amend or delete word.</p>
+
+              <h2>Extra extra</h2>
+              <h4>Title - center the app</h4>
+              <p>Tap on the title to center the app - to hide distractions like points and time trackers.</p>
+              <h1>Contact the Developer</h1>
+              <p class="centerIt">miroslav.makarov@gmail.com</p>
+              <br><br><br><br><br>
+
+              <div class="closeButton centerIt button">- close -</div>
+            </div>
+          </div>
+          <div id="pilesInfo">
+            <div class="visibleIcon">
+              <img src="img/infoDecksDi.png" height="42px" width="42px" class="mainIcon">
+            </div>
+            <div class="invisibleWindow">
+              <h4> Information about your piles:</h4>
+              <br>
+                <div id="pileLearned">
+                  <h3>Learned pile</h3>
+                  <button>Show info</button>
+                  <br>
+                  <div class="showHideCards" ></div>
+                </div> <br>
+
+                <div id="pileDue">
+                  <h3>Learning - DUE pile</h3>
+                  <button >Show info</button>
+                  <div class="showHideCards" ></div>
+                </div> <br>
+
+                <div id="pileNotDue">
+                  <h3>Learning -WAITING (not due) pile</h3>
+                  <button >Show info</button>
+                  <div class="showHideCards" ></div>
+                </div> <br>
+                
+                <div id="pileToLearnNext">
+                  <h3>Pile to learn NEXT</h3>
+                  <button >Show info</button>
+                  <div class="showHideCards" ></div>
+                </div> <br>
+
+                <div id="pileToLearn">
+                  <h3 style='color:red'>Pile to learn LATER</h3>
+                  <H1 style='color:red'>please use only in state ot highest urgency!</H1>
+                  <button style='background:red' >Show info</button>
+                  <div class="showHideCards" ></div>
+                </div> 
+                <br><br><br><br><br><br><br>
+
+              <div class="closeButton centerIt button">- close -</div>
+            </div>
+          </div>
+
+          <div id="addVocabulary">
+            <div class="visibleIcon">
+              <img src="img/plusPNG.png" alt="">
+            </div>
+            <div class="invisibleWindow">
+              <h4> Add new word to learn:</h4>
+              <form id="formNewWord" action="" autocomplete="off">
+                <label for="nativeInput">Native word:</label>
+                <input id="formNewWord_NativeInput" name="nativeInput" type="text">
+                <label for="toLearnInput">Word to learn:</label>
+                <input name="toLearnInput" type="text">
+                <br>
+
+                <!-- <input name="newWordCheckBox" type="checkbox" class="inline" checked> -->
+                <!-- <label for="newWordCheckBox" class="inline">Add card into the current pile. </label> -->
+     <div style="display:flex">
+            <div>
+                    <input type="radio" id="radioNow" name="collection" value="NOW"class="inline">
+                    <label for="radioNow" class="inline">Learn NOW</label>
+                    <br> <br>
+                    <input type="radio" id="radioNext" name="collection" value="NEXT" class="inline" checked>
+                    <label for="radioNext" class="inline">Learn NEXT</label>
+                    <br><br>
+                    <input type="radio" id="radioLater" name="collection" value="LATER" class="inline">
+                    <label for="radioLater" class="inline">Learn LATER</label>
+            </div> 
+            <div style="padding-left: 30px; display: flex;flex-flow: column; align-items: center; margin: 0 auto;">
+                <input name="newWordTranslationCheckBox" type="checkbox"  id="translationCheckedCheckbox" style="width: 40px; height: 40px; border-radius: 50%;  border: 1px solid black;">
+                  <label for="newWordTranslationCheckBox" style="text-align: center;">Translation checked?</label>
+            </div>
+     </div>
+                <br>
+                <input type="submit" class="button">
+                <br>
+              </form>
+              <br>
+              <p class="centerIt">or</p>
+              <a class="centerIt button" id="importBtn" href="importFile_video.html">Import vocabulary from Excel
+                file.</a>
+              <div class="closeButton centerIt button">- close -</div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <h1 id="mainTitle">Vocabulary Practice
+          <p id="tapToCenter"> Tap To Center</p>
+        </h1>
+        <!-- <div id="language_labels">
+          <span> in English </span>
+          <span>/</span>
+          <span>in Czech</span>
+        </div> -->
+        <div id="words">
+          <p id="wordOne">-</p>
+          <p id="wordTwo">-</p>
+          <div id="showLettersWrapper">L</div>
+        </div>
+
+        <div id="hints">
+          <div id="hintConnectionReminder" class="hintButton button hide">Connection Reminder</div>
+          <p id="hintConnectionReminderText" class="hide hintButton button hintText">reminder text</p>
+          <div id="hintConnection" class="hintButton button hide">Connection </div>
+          <p id="hintConnectionText" class="hide hintButton button hintText">connection text</p>
+
+
+        </div>
+
+
+        <div id="levelIndicator"></div> <!-- set to invisible -->
+        <!-- <br> -->
+        <!-- <p>audio icon here</p>
+        <audio id="audio" src=""></audio> -->
+        <!-- 
+        <div id="test"> refresh</div>
+        <br> -->
+
+        <div id="options">
+          <div id="speakWord">
+            <div class="optionsIcon">Speak</div>
+            <div class="optionsWindow"></div>
+          </div>
+          <div id="definitionGoogle">
+            <a class="optionsIcon notranslate" content="notranslate"
+              href="https://www.google.com/search?q=definition+of+furniture" target="_blank">
+              Translate</a>
+            <div class="optionsWindow">
+              <!-- <iframe src="https://www.google.com" class="preview"></iframe> -->
+              <!-- <a href="https://www.google.com/search?q=definition+of+furniture" target="_blank">link</!-->
+              <!-- <div class="closeButton centerIt">close</div> -->
+            </div>
+          </div>
+          <div id="sentenceExamples">
+            <div class="optionsIcon">Example</div>
+            <div class="optionsWindow"></div>
+          </div>
+          <div id="alternativeTranslations">
+            <div class="optionsIcon">Alternative Tr.</div>
+            <div class="optionsWindow"></div>
+          </div>
+          <div id="changeWords">
+            <div class="optionsIcon">Adjust</div>
+            <div class="optionsWindow">
+              <!-- <div class="closeButton centerIt button">- Return without changes -</div> -->
+              <h4> Adjust:</h4>
+              <form id="formAdjustWord" action="" autocomplete="off">
+                <label for="nativeInput">Native word:</label>
+                <input id="nativeWToAdjust" name="nativeInput" type="text" placeholder="original word">
+                <label for="toLearnInput">Word to learn:</label>
+                <input id="wToLearnAdjust" name="toLearnInput" type="text" placeholder="original word">
+
+                <div class="bgDark pm mtb">
+                  <label for="connectionInput">Connection:</label>
+                  <input id="connectionInput" name="connectionInput" type="text">
+
+                  <label for="remindConnectionA">Reminder when <br> "Native language" shown:</label>
+                  <input id="remindConnectionA" name="remindConnectionA" type="text">
+
+                  <label for="remindConnectionB">Reminder when <br> "Language to learn" shown:</label>
+                  <input id="remindConnectionB" name="remindConnectionB" type="text">
+                </div>
+                <div id="pospone">
+                  <h3>pospone</h3>
+                  <div class="flexWrapper">
+                    <div>
+                      <input type="radio" id="minutes" name="pospone" value="m">
+                      <label for="minutes">5 minutes</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="hours" name="pospone" value="h">
+                      <label for="hours">5 hours</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="days" name="pospone" value="d">
+                      <label for="days">5 days</label>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <div class="pairedButton">
+                  <input type="submit" value="IMPLEMENT changes" class="button centerIt">
+                  <div class="closeButton centerIt button">CANCEL changes</div>
+                </div>
+              </form>
+              <br>
+              <button id="deleteCard" class="button mm">Delete Card</button>
+              <br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="connection" class="hide">
+          <h6>Connection (Spojka):</h6>
+          <p id="connectionP"></p>
+        </div> -->
+
+        <!-- <div id="takeTimeReminder">
+          <h5>Take your time <br> to <br> improve the connection.</h5>
+        </div> -->
+
+
+        <br>
+
+        <br><br><br><br><br><br>
+
+      </div>
+
+      <br><br><br><br><br><br>
+      <div id="saveChangesAlert">
+        <h4>Evaluate card to save adjustments.</h4>
+      </div>
+      <div id="bottonWrapper">
+        <div id="b_next">SHOW</div>
+        <div id="threeButtons">
+          <div id="BtnDown">
+            :(
+          </div>
+          <div id="BtnStay">
+            :|
+          </div>
+          <div id="BtnSlow">
+            slow
+          </div>
+          <div id="BtnUp">
+            :)
+          </div>
+        </div>
+        <div id="improveChallengeButtons">
+          <div id="adjustOption">
+            Adjust
+          </div>
+          <div id="moveOnOption">
+            Move On
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- firebase was here, now in file, ust copy back here -->
+  <!-- < !--The core Firebase JS SDK is always required and must be listed first-- > -->
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <!-- < script src = "https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js" ></script > -->
+
+  <!-- < !--TODO : Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyAY9FCIHSK9v0LSa8i_PWxm06kx_Isv4Uo",
+      authDomain: "ninja2-634e4.firebaseapp.com",
+      databaseURL: "https://ninja2-634e4.firebaseio.com",
+      projectId: "ninja2-634e4",
+      storageBucket: "ninja2-634e4.appspot.com",
+      messagingSenderId: "900566306511",
+      appId: "1:900566306511:web:044e5cb5c69760492db1ba"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+  </script>
+
+
+
+
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=otlXOcMF"></script>
+  <script src="js/bundle.js"></script>
+</body>
+
+</html>
